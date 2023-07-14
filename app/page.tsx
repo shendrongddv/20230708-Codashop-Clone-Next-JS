@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       {/* Banner Slider */}
-      <section className="px-4 pb-8 pt-20">
+      <section className="px-0 pt-20 sm:px-4">
         <div className="container">
           <div className="w-full">
             <BannerSlider />

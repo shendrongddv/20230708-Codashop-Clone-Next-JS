@@ -6,7 +6,7 @@ import SidebarToggle from "./sidebar-toggle";
 
 const HeaderMain = () => {
   return (
-    <header className="fixed left-0 top-0 w-full bg-[#280031] px-4">
+    <header className="fixed left-0 top-0 z-50 w-full bg-[#280031] px-4">
       <div className="container">
         {/* Flex */}
         <div className="flex h-16 items-center justify-between">

@@ -95,7 +95,7 @@ const BannerSlider = () => {
       }}
     >
       {items?.map((item) => (
-        <SwiperSlide key={item.id} className="lg">
+        <SwiperSlide key={item.id} className="max-sm:px-4">
           <BannerCard title={item.title} img={item.img} />
         </SwiperSlide>
       ))}
