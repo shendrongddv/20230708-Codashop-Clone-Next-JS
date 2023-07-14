@@ -24,7 +24,7 @@ const SidebarToggle = () => {
           <Menu className="h-5 w-5" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-full bg-[#3C1F42] text-white">
+      <SheetContent side="left" className="w-full bg-[#3C1F42] p-0 text-white">
         <SheetHeader>
           <SheetTitle></SheetTitle>
           <SheetDescription></SheetDescription>

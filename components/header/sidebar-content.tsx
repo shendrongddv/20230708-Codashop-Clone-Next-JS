@@ -6,25 +6,25 @@ import { buttonVariants } from "../ui/button";
 
 const SidebarContent = () => {
   return (
-    <div className="h-full w-full">
-      <h2 className="mt-6 text-2xl font-bold">Daftar Codashop sekarang!</h2>
+    <div className="flex h-full w-full flex-col justify-center p-6 md:justify-start">
+      <h2 className="text-2xl font-bold md:mt-8">Daftar Codashop sekarang!</h2>
 
       <div className="mt-8 space-y-4">
         {/* Icon Text */}
         <div className="flex w-full items-center">
-          <BadgePercent className="mr-3 h-7 w-7 flex-none text-[#E8F953]" />
+          <BadgePercent className="mr-4 h-14 w-10 flex-none text-[#E8F953]" />
           <span>
             Jadilah yang pertama mengetahui promo dan penawaran ekslusif!
           </span>
         </div>
         {/* Icon Text */}
         <div className="flex w-full items-center">
-          <Bookmark className="mr-3 h-7 w-7 flex-none text-[#E8F953]" />
+          <Bookmark className="mr-4 h-14 w-10 flex-none text-[#E8F953]" />
           <span>Akses riwayat pesanan anda dengan mudah</span>
         </div>
         {/* Icon Text */}
         <div className="flex w-full items-center">
-          <ShieldCheck className="mr-3 h-7 w-7 flex-none text-[#E8F953]" />
+          <ShieldCheck className="mr-4 h-14 w-10 flex-none text-[#E8F953]" />
           <span>Lebih cepat dan aman</span>
         </div>
       </div>

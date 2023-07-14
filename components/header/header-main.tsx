@@ -9,7 +9,7 @@ const HeaderMain = () => {
     <header className="fixed left-0 top-0 w-full border-b border-white/25 bg-[#3C1F42] px-4">
       <div className="container">
         {/* Flex */}
-        <div className="flex h-14 items-center justify-between">
+        <div className="flex h-14 items-center justify-between md:h-16">
           {/* Col Left */}
           <div className="flex items-center gap-2">
             {/* Sidebar */}
