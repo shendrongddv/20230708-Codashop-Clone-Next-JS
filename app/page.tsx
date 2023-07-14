@@ -1,8 +1,14 @@
-import GameCard from "@/components/game-card";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+
+import BannerSlider from "@/components/banner-slider";
+import GameCard from "@/components/game-card";
+import NewsCard from "@/components/news-card";
+import PromoCard from "@/components/promo-card";
+import WhyUsCard from "@/components/why-us-card";
 
 export default function Home() {
   const itemsDesktop = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -12,25 +18,8 @@ export default function Home() {
       {/* Banner Slider */}
       <section className="px-4 pb-8 pt-20">
         <div className="container">
-          <div className="flex items-center justify-center gap-4">
-            <div className="md:w-1/2">
-              <Image
-                src="/banners/banner-9.jpg"
-                alt="Banner"
-                width={730}
-                height={280}
-                className="h-auto w-full rounded-lg"
-              />
-            </div>
-            <div className="hidden md:block md:w-1/2">
-              <Image
-                src="/banners/banner-10.png"
-                alt="Banner"
-                width={730}
-                height={280}
-                className="h-auto w-full rounded-lg"
-              />
-            </div>
+          <div className="w-full">
+            <BannerSlider />
           </div>
         </div>
       </section>
@@ -160,6 +149,23 @@ export default function Home() {
       {/* ./ New Titles */}
 
       {/* Promo */}
+      <section className="section-bg-1">
+        <div className="section-bg-2 px-4 pb-16 pt-8">
+          <div className="container">
+            <div className="flex flex-col gap-6">
+              <h2 className="text-2xl font-extrabold text-white md:text-4xl">
+                Promo
+              </h2>
+
+              {/* News Cards */}
+              <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+                {/* Card */}
+                <PromoCard />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* ./ Promo */}
 
       {/* Games */}
@@ -286,9 +292,52 @@ export default function Home() {
       {/* ./ Voucher */}
 
       {/* News & Updates */}
+      <section className="px-4 pb-16 pt-8">
+        <div className="container">
+          <div className="flex flex-col gap-6">
+            <h2 className="text-2xl font-extrabold text-white md:text-4xl">
+              News and Updates
+            </h2>
+
+            {/* News Cards */}
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+              {/* Card */}
+              <NewsCard />
+            </div>
+          </div>
+        </div>
+      </section>
       {/* ./ News & Updates */}
 
       {/* Codashop Indonesia */}
+      <section className="px-4 pb-16 pt-8">
+        <div className="container">
+          <div className="flex flex-col gap-6">
+            <h2 className="text-2xl font-extrabold text-white md:text-4xl">
+              Codashop Indonesia
+            </h2>
+            <div>
+              <h3 className="font-bold text-white">
+                Codashop: Website top-up terbesar, tercepat dan terpercaya di
+                Indonesia
+              </h3>
+              <p className="text-sm text-white/80">
+                Setiap bulannya, jutaan gamers menggunakan Codashop untuk
+                melakukan pembelian kredit game dengan lancar: tanpa registrasi
+                ataupun log-in, dan kredit permainan akan ditambahkan secara
+                instan. Top-up Mobile Legends, Free Fire, Ragnarok M, dan
+                berbagai game lainnya!
+              </p>
+            </div>
+
+            {/* Why Us Cards */}
+            <div className="mt-6 grid gap-x-8 gap-y-6 sm:grid-cols-2">
+              {/* Card */}
+              <WhyUsCard />
+            </div>
+          </div>
+        </div>
+      </section>
       {/* ./ Codashop Indonesia */}
     </>
   );
