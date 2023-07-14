@@ -34,7 +34,7 @@ export default function Home() {
             </h2>
 
             {/* # Cards Mobile */}
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:hidden md:grid-cols-4 lg:grid-cols-6">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 md:hidden md:grid-cols-4 lg:grid-cols-6">
               {/* Card */}
               {itemsMobile.map((item) => (
                 <GameCard key={item} />
@@ -75,7 +75,7 @@ export default function Home() {
             </h2>
 
             {/* # Cards Mobile */}
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:hidden md:grid-cols-4 lg:grid-cols-6">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 md:hidden md:grid-cols-4 lg:grid-cols-6">
               {/* Card */}
               {itemsMobile.map((item) => (
                 <GameCard key={item} />
@@ -116,7 +116,7 @@ export default function Home() {
             </h2>
 
             {/* # Cards Mobile */}
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:hidden md:grid-cols-4 lg:grid-cols-6">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 md:hidden md:grid-cols-4 lg:grid-cols-6">
               {/* Card */}
               {itemsMobile.map((item) => (
                 <GameCard key={item} />
@@ -177,7 +177,7 @@ export default function Home() {
             </h2>
 
             {/* # Cards Mobile */}
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:hidden md:grid-cols-4 lg:grid-cols-6">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 md:hidden md:grid-cols-4 lg:grid-cols-6">
               {/* Card */}
               {itemsMobile.map((item) => (
                 <GameCard key={item} />
@@ -218,7 +218,7 @@ export default function Home() {
             </h2>
 
             {/* # Cards Mobile */}
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:hidden md:grid-cols-4 lg:grid-cols-6">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 md:hidden md:grid-cols-4 lg:grid-cols-6">
               {/* Card */}
               {itemsMobile.map((item) => (
                 <GameCard key={item} />
@@ -259,7 +259,7 @@ export default function Home() {
             </h2>
 
             {/* # Cards Mobile */}
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:hidden md:grid-cols-4 lg:grid-cols-6">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 md:hidden md:grid-cols-4 lg:grid-cols-6">
               {/* Card */}
               {itemsMobile.map((item) => (
                 <GameCard key={item} />
@@ -301,6 +301,7 @@ export default function Home() {
 
             {/* News Cards */}
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+              {/* <div className="flex w-screen flex-row gap-4 overflow-x-scroll sm:grid sm:grid-cols-2 md:grid-cols-3"> */}
               {/* Card */}
               <NewsCard />
             </div>
