@@ -18,10 +18,10 @@ const SidebarToggle = () => {
       <SheetTrigger asChild>
         <Button
           variant="outline"
-          size="icon"
-          className="rounded-full border-white/25 bg-transparent hover:bg-white/25"
+          size="sm"
+          className="aspect-square border-white/10 bg-transparent p-2 text-white hover:bg-white/10 hover:text-white"
         >
-          <Menu className="h-4 w-4 text-white" />
+          <Menu className="h-5 w-5" />
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-full bg-[#3C1F42] text-white">

@@ -9,7 +9,7 @@ const HeaderMain = () => {
     <header className="fixed left-0 top-0 w-full border-b border-white/25 bg-[#3C1F42] px-4">
       <div className="container">
         {/* Flex */}
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-14 items-center justify-between">
           {/* Col Left */}
           <div className="flex items-center gap-2">
             {/* Sidebar */}
@@ -22,7 +22,7 @@ const HeaderMain = () => {
                 alt="Codashop"
                 width={636}
                 height={140}
-                className="h-8 w-auto"
+                className="h-6 w-auto md:h-8"
               />
             </Link>
 
@@ -34,24 +34,25 @@ const HeaderMain = () => {
           </div>
 
           {/* Col Right */}
-          <div className="flex gap-2">
+          <div className="flex items-center">
             <Button
               variant="outline"
-              size="icon"
-              className="rounded-full border-white/25 bg-transparent hover:bg-white/25"
+              size="sm"
+              className="aspect-square rounded-full border-white/0 bg-transparent p-2 text-white hover:bg-white/10 hover:text-white"
             >
-              <Search className="h-4 w-4 text-white" />
+              <Search className="h-5 w-5" />
             </Button>
             <Button
               variant="outline"
-              size="icon"
-              className="rounded-full border-white/25 bg-transparent hover:bg-white/25"
+              size="sm"
+              className="aspect-square rounded-full border-white/0 bg-transparent p-2 text-white hover:bg-white/10 hover:text-white"
             >
-              <BellDot className="h-4 w-4 text-white" />
+              <BellDot className="h-5 w-5" />
             </Button>
             <Button
               variant="destructive"
-              className="hidden rounded-full md:flex md:px-8"
+              size="sm"
+              className="ml-2 rounded-full md:px-8"
             >
               Daftar
             </Button>
