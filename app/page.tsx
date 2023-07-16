@@ -6,10 +6,9 @@ import { buttonVariants } from "@/components/ui/button";
 
 import BannerSlider from "@/components/banner-slider";
 import GameCard from "@/components/game-card";
-import NewsCard from "@/components/news-card";
-import PromoCard from "@/components/promo-card";
+import NewsCard, { NewsCardMobile } from "@/components/news-card";
+import PromoCard, { PromoCardMobile } from "@/components/promo-card";
 import WhyUsCard from "@/components/why-us-card";
-import ScrollArea1 from "@/components/scroll-area-1";
 
 export default function Home() {
   const itemsDesktop = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -151,18 +150,26 @@ export default function Home() {
 
       {/* Promo */}
       <section className="section-bg-1">
-        <div className="section-bg-2 px-4 pb-16 pt-8">
+        <div className="section-bg-2 pb-16 pt-8 md:px-4">
           <div className="container">
             <div className="flex flex-col gap-6">
-              <h2 className="text-2xl font-extrabold text-white md:text-4xl">
+              <h2 className="text-2xl font-extrabold text-white max-md:px-4 md:text-4xl">
                 Promo
               </h2>
 
-              {/* News Cards */}
-              <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+              {/* News Cards Desktop */}
+              <div className="grid gap-4 max-md:hidden sm:grid-cols-2 md:grid-cols-3">
                 {/* Card */}
                 <PromoCard />
               </div>
+              {/* ./ News Cards Desktop */}
+
+              {/* News Cards Mobile */}
+              <div className="w-full md:hidden">
+                {/* Card */}
+                <PromoCardMobile />
+              </div>
+              {/* ./ News Cards Mobile */}
             </div>
           </div>
         </div>
@@ -293,19 +300,26 @@ export default function Home() {
       {/* ./ Voucher */}
 
       {/* News & Updates */}
-      <section className="px-4 pb-16 pt-8">
+      <section className="pb-16 pt-8 md:px-4">
         <div className="container">
           <div className="flex flex-col gap-6">
-            <h2 className="text-2xl font-extrabold text-white md:text-4xl">
+            <h2 className="text-2xl font-extrabold text-white max-md:px-4 md:text-4xl">
               News and Updates
             </h2>
 
-            {/* News Cards */}
-            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-              {/* <div className="flex w-screen flex-row gap-4 overflow-x-scroll sm:grid sm:grid-cols-2 md:grid-cols-3"> */}
+            {/* News Cards Desktop */}
+            <div className="grid gap-4 max-md:hidden sm:grid-cols-2 md:grid-cols-3">
               {/* Card */}
               <NewsCard />
             </div>
+            {/* ./ News Cards Desktop */}
+
+            {/* News Cards Mobile */}
+            <div className="w-full md:hidden">
+              {/* Card */}
+              <NewsCardMobile />
+            </div>
+            {/* ./ News Cards Mobile */}
           </div>
         </div>
       </section>
@@ -341,16 +355,6 @@ export default function Home() {
         </div>
       </section>
       {/* ./ Codashop Indonesia */}
-
-      {/* Scrollbar */}
-      <section className="bg-white py-16 md:px-4">
-        <div className="container">
-          <div className="w-full">
-            <ScrollArea1 />
-          </div>
-        </div>
-      </section>
-      {/* ./ Scrollbar */}
     </>
   );
 }

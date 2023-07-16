@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ScrollArea, ScrollBar } from "./ui/scroll-area";
 
 const news = [
   {
@@ -49,3 +50,36 @@ const PromoCard = () => {
 };
 
 export default PromoCard;
+
+export const PromoCardMobile = () => {
+  const items = news;
+
+  return (
+    <ScrollArea>
+      <div className="flex pb-4">
+        {items.map((item) => (
+          <div key={item.id} className="max-md:pl-4 max-md:last:pr-4">
+            <div className="h-full min-w-[320px] overflow-hidden rounded-lg bg-[#EAE8F7] p-2">
+              <div className="overflow-hidden rounded-md">
+                <Image
+                  src={`/promos/${item.img}`}
+                  alt={item.title}
+                  width={569}
+                  height={216}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col py-4">
+                <Link href={item.href}>
+                  <h3 className="font-bold">{item.title}</h3>
+                </Link>
+                <p className="mt-3 text-sm opacity-80">{item.desc}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <ScrollBar orientation="horizontal" />
+    </ScrollArea>
+  );
+};
