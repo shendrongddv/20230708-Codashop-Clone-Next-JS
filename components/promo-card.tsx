@@ -69,7 +69,7 @@ export const PromoCardMobile = () => {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="flex flex-col py-4">
+              <div className="flex flex-col p-4">
                 <Link href={item.href}>
                   <h3 className="font-bold">{item.title}</h3>
                 </Link>
