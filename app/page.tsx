@@ -9,6 +9,7 @@ import GameCard from "@/components/game-card";
 import NewsCard from "@/components/news-card";
 import PromoCard from "@/components/promo-card";
 import WhyUsCard from "@/components/why-us-card";
+import ScrollArea1 from "@/components/scroll-area-1";
 
 export default function Home() {
   const itemsDesktop = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -340,6 +341,16 @@ export default function Home() {
         </div>
       </section>
       {/* ./ Codashop Indonesia */}
+
+      {/* Scrollbar */}
+      <section className="bg-white py-16 md:px-4">
+        <div className="container">
+          <div className="w-full">
+            <ScrollArea1 />
+          </div>
+        </div>
+      </section>
+      {/* ./ Scrollbar */}
     </>
   );
 }
