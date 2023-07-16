@@ -3,6 +3,8 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import SidebarToggle from "./sidebar-toggle";
+import { NotificationPopover } from "./notification-popover";
+import Notifications from "./notifications";
 
 const HeaderMain = () => {
   return (
@@ -42,13 +44,15 @@ const HeaderMain = () => {
             >
               <Search className="h-5 w-5" />
             </Button>
-            <Button
+            {/* <Button
               variant="outline"
               size="sm"
               className="aspect-square rounded-full border-white/0 bg-transparent p-2 text-white hover:bg-white/10 hover:text-white"
             >
               <BellDot className="h-5 w-5" />
-            </Button>
+            </Button> */}
+            <NotificationPopover />
+            {/* <Notifications /> */}
             <Button
               variant="destructive"
               size="sm"

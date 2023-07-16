@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-full overflow-x-hidden bg-[#280031] antialiased">
+      <body className="h-full bg-[#280031] antialiased">
         <HeaderMain />
         <main>{children}</main>
         <FooterMain />
