@@ -1,12 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { BellDot } from "lucide-react";
+import { BellDot, MessageSquare } from "lucide-react";
 import Image from "next/image";
 
 const notifications = [
@@ -47,26 +45,31 @@ export const NotificationPopover = () => {
           <div className="mt-1 space-y-2">
             {notifications?.map((item) => (
               <div key={item.id} className="flex rounded-lg bg-slate-100 p-2">
-                <div className="aspect-square h-11 w-11">
-                  <Image
+                <div className="mr-2 aspect-square h-4 w-4">
+                  {/* <Image
                     src="/icons/notification.png"
                     alt={item.title}
                     width={50}
                     height={50}
                     className="aspect-square h-8 w-8"
-                  />
+                  /> */}
+                  <MessageSquare className="h-4 w-4 text-destructive" />
                 </div>
-                <div className="w-full">
+                <div className="-mt-2 w-full">
                   <span className="-mt-4 text-xs font-semibold leading-none text-primary">
                     {item.title}
                   </span>
-                  <p className="line-clamp-2 text-xs">{item.text}</p>
+                  <p className="line-clamp-2 text-xs opacity-80">{item.text}</p>
                 </div>
               </div>
             ))}
           </div>
-          <div className="py-4">
-            <Button variant="destructive" className="w-full rounded-full">
+          <div className="flex w-full justify-end pt-2">
+            <Button
+              variant="link"
+              size="sm"
+              className="text-xs text-destructive"
+            >
               Lihat semua notofikasi
             </Button>
           </div>
