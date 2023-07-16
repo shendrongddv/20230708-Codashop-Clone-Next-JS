@@ -10,6 +10,7 @@ const BannerCard: React.FC<BannerCardProps> = ({ title, img }) => {
     <div className="w-full overflow-hidden rounded-lg">
       <Image
         src={`/banners/${img}`}
+        loading="eager"
         alt={title}
         width={730}
         height={280}
